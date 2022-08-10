@@ -469,7 +469,7 @@ namespace Photon.Pun
 
             for (int componentsIndex = 0; componentsIndex < photonNetview.RpcMonoBehaviours.Length; componentsIndex++)
             {
-                MonoBehaviour monob = photonNetview.RpcMonoBehaviours[componentsIndex];
+                Behaviour monob = photonNetview.RpcMonoBehaviours[componentsIndex];
                 if (monob == null)
                 {
                     Debug.LogError("ERROR You have missing MonoBehaviours on your gameobjects!");
@@ -2061,7 +2061,7 @@ namespace Photon.Pun
         }
 
         // NOTE: Might be used as replacement for the equivalent method in SupportClass.
-        internal static bool GetMethod(MonoBehaviour monob, string methodType, out MethodInfo mi)
+        internal static bool GetMethod(Behaviour monob, string methodType, out MethodInfo mi)
         {
             mi = null;
 

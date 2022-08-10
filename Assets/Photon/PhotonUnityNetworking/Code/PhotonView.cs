@@ -143,7 +143,7 @@ namespace Photon.Pun
 
 
 
-        internal MonoBehaviour[] RpcMonoBehaviours;
+        internal Behaviour[] RpcMonoBehaviours;
 
 
 
